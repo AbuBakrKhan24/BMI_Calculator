@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+  </head>
+  <link rel="stylesheet" href="./Calculator_Style.css" />
+
+  <body>
+    <div class="container">
+      <h1>BMI Calculator</h1>
+      <p>
+        This mini form is to check what your BMI is, in order to check what your
+        BMI is you will have to insert you Height which will be measured in
+        meters so for e.g if your height is 175cm you will divide th at by ten
+        and get 1.75m which will give you your height in meters. After you have
+        inserted your height proceed to insert your weight then select Calculate
+        to see what your BMI is.
+      </p>
+
+      <form action="none" method="post" name="bmi_form">
+        <h3>Height and Weight</h3>
+        <label for="inches">Height (m):</label>
+        <input type="text" name="inches" />
+        <br />
+        <label for="pounds">Weight (kg):</label>
+        <input type="text" name="pounds" />
+        <br />
+        <button
+          type="button"
+          name="calculate"
+          value="Calculate your BMI"
+          onclick="evalBMI()"
+        >
+          Calculate your BMI
+        </button>
+
+        <h3>BMI</h3>
+        <label for="bmi" id="bmi_label">Your calculated BMI is:</label>
+        <input type="text" name="bmi" id="bmi" />
+      </form>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
